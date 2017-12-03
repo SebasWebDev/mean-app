@@ -1,0 +1,11 @@
+Home component
+<div *ngIf="content.length === 0" class="progress-loader" align="center"><div class="chart-holder loading"><br><br>Even geduld a.u.b. Uw gegevens worden opgehaald</div></div>
+<div class="row">
+	<div *ngFor="let item of content" class="col-md-12">
+	    <h2 [innerHTML]="item.title"></h2>
+	    <h4>Posted on: {{ item.created | CustomDate }}</h4>
+	    <div class="img-responsive feature-img" *ngIf="item.field_image !== ''" [innerHTML]="item.field_image"></div>
+	    <div [innerHTML]="item.body"></div>
+	    <hr>
+	</div>
+</div>

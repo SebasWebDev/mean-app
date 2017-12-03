@@ -1,0 +1,28 @@
+{
+  "name": "mean-app",
+  "version": "1.0.0",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SebasWebDev/mean-app.git"
+  },
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.1",
+    "bootstrap-sass": "^3.3.6"
+  },
+  "devDependencies": {},
+  "overrides": {
+    "font-awesome": {
+      "main": "./fonts/*"
+    },
+    "bootstrap-sass-official": {
+      "main": "./assets/javascripts/bootstrap.js"
+    }
+  }
+}

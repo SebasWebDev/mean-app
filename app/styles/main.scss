@@ -1,0 +1,55 @@
+@import './libraries/font-awesome/font-awesome';
+@import '../../bower_components/bootstrap-sass/assets/stylesheets/bootstrap';
+html,
+body {
+  font-size: 100%;
+}
+html a {
+  cursor: pointer;
+}
+// header
+header.header {
+  display: block;
+
+  padding: 15px 0;
+  border-bottom: 1px solid #CCCCCC;
+
+  .app-logo {
+    background: url('../images/sebastianlopez.png') center center;
+    background-size: cover;
+    display: block;
+    width: 161px;
+    height: 41px;
+  }
+}
+menu-items aside{
+  &.desktop {
+    .first-level-item .menu-title {
+      display: block;
+      margin: .9375rem 0 1.3125rem;
+    }
+    nav.mainmenu {
+      .submenu {
+        li {
+          &.active {
+            a {
+              color: #fff;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 769px) {
+  header.header,
+  section.content, .news-wrapper {
+    padding-left: 7%;
+  }
+  .news_element {
+    .news-title {
+      height: 55px;
+    }
+  }
+}
